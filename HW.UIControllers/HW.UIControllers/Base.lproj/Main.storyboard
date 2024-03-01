@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9aW-sW-bUW">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FIrst VC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="FIrst VC" id="BYZ-38-t0r" customClass="ViewController" customModule="HW_UIControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hx-bX-gzT">
+                                <rect key="frame" x="108.33333333333333" y="409" width="176.33333333333337" height="34.333333333333314"/>
+                                <color key="backgroundColor" red="0.85742351504945269" green="0.34081738782763166" blue="0.44374592154131026" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.67949307830000005" green="0.7871189529" blue="0.55605401619999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="go to second VC">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Chalkduster"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="akC-2u-FBG" kind="show" id="sot-sO-Q4i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.67949307830000005" green="0.7871189529" blue="0.55605401619999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2Hx-bX-gzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3QC-Mq-PXp"/>
+                            <constraint firstItem="2Hx-bX-gzT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wn2-6f-4D5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="first VC" image="book.fill" catalog="system" id="4Gp-ow-C3X"/>
+                    <navigationItem key="navigationItem" title="Home" id="k0M-8j-7mx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954.9618320610687" y="3.5211267605633805"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="hX7-Lb-RG5">
+            <objects>
+                <viewController title="Camera" id="VfC-SS-lgy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MOJ-kh-tgY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is camera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j21-cu-39a">
+                                <rect key="frame" x="117.66666666666669" y="414" width="158" height="24"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eb6-0V-qxB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j21-cu-39a" firstAttribute="centerX" secondItem="MOJ-kh-tgY" secondAttribute="centerX" id="QOF-zE-LoJ"/>
+                            <constraint firstItem="j21-cu-39a" firstAttribute="centerY" secondItem="MOJ-kh-tgY" secondAttribute="centerY" id="qZ8-HO-kjZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="camera" image="camera.fill" catalog="system" id="YIE-iJ-f3A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qcd-S6-7ST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.2442748091603" y="707.74647887323943"/>
+        </scene>
+        <!--VC 2-->
+        <scene sceneID="UBr-YL-Lgg">
+            <objects>
+                <viewController title="VC 2" id="akC-2u-FBG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HwY-fi-nIL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6j-1h-wVq">
+                                <rect key="frame" x="117" y="409" width="158" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.44981652249999998" green="0.44644129560000001" blue="0.79889810880000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.91283805159999998" green="0.74568073040000005" blue="0.3038532478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="plain" titleAlignment="center">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="go to third VC">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Chalkduster"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="wsQ-yt-G2j" kind="show" id="AoA-8D-R31"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vMk-YN-W82"/>
+                        <color key="backgroundColor" red="0.91283805159999998" green="0.74568073040000005" blue="0.3038532478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="z9w-3x-uZZ"/>
+                    <navigationItem key="navigationItem" title="Second VC" id="haL-bE-m71"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTn-tH-bQv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2761.0687022900761" y="3.5211267605633805"/>
+        </scene>
+        <!--VC 3-->
+        <scene sceneID="yLx-6G-Z4Y">
+            <objects>
+                <viewController title="VC 3" id="wsQ-yt-G2j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cz7-iu-1we">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zbY-zr-bhy"/>
+                        <color key="backgroundColor" red="0.4044099674814236" green="0.63323810402456771" blue="0.76119528790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="cz5-Bk-BmN"/>
+                    <navigationItem key="navigationItem" title="Third VC" id="EMf-xL-HFi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sux-cV-H61" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3554.9618320610684" y="3.5211267605633805"/>
+        </scene>
+        <!--home-->
+        <scene sceneID="tzD-Ou-R5u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ybZ-Dy-aPb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="home" image="house" catalog="system" id="TXK-ZQ-XbG"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cbj-pR-C5J"/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="0AP-HS-ch3">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zsa-6L-5Rz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBe-al-eTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="38C-cg-4AA">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9aW-sW-bUW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LfQ-iK-mvj">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ybZ-Dy-aPb" kind="relationship" relationship="viewControllers" id="bx1-OI-XNz"/>
+                        <segue destination="VfC-SS-lgy" kind="relationship" relationship="viewControllers" id="8tp-1H-PZe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="117-jK-Kp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="355.63380281690144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
